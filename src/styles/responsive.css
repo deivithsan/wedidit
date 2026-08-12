@@ -1,0 +1,14 @@
+@media(max-width: 600px) {
+  .glass {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  button {
+    width: 100%;
+    padding: 16px;
+  }
+}

@@ -1,0 +1,23 @@
+@keyframes bg {
+  0% { background-position: 0 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes fall {
+  to { transform: translateY(110vh) rotate(360deg); opacity: .2; }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 20px 40px rgba(255, 120, 183, .35); }
+  50% { box-shadow: 0 30px 60px rgba(208, 156, 255, .45); }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; transform: translateY(-20px); }
+}

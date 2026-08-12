@@ -1,0 +1,8 @@
+:root {
+  --pink: #ffdbe9;
+  --purple: #ecdfff;
+  --white: #ffffff;
+  --text: #5a4666;
+  --shadow: rgba(151, 95, 161, 0.15);
+  --button-start: linear-gradient(135deg, #ff78b7, #d09cff);
+}
