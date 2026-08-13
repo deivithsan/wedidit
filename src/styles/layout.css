@@ -115,6 +115,12 @@ body {
   grid-column: 2 / 3;
 }
 
+/* When only one box is rendered, ensure box-four doesn't try to occupy a non-existent column */
+.single-box-grid .box-four {
+  grid-column: auto !important;
+  justify-self: center;
+}
+
 @media (max-width: 860px) {
   .stage-grid {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
