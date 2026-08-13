@@ -56,6 +56,30 @@ export async function initApp() {
 
   const savedIndex = await loadSavedSelection();
 
+  // Record a visit (timestamp + optional device info) in localStorage
+  try {
+    const key = 'visitLog';
+    const now = new Date().toISOString();
+    const entry = {
+      timestamp: now,
+      platform: navigator.platform || null,
+      userAgent: navigator.userAgent || null,
+      screen: `${window.screen?.width || 0}x${window.screen?.height || 0}`
+    };
+    const existing = JSON.parse(localStorage.getItem(key) || '[]');
+    existing.push(entry);
+    localStorage.setItem(key, JSON.stringify(existing));
+    // also keep a plain-text copy for convenience
+    try {
+      const lines = existing.map(e => `${e.timestamp} | ${e.platform || ''} | ${e.screen} | ${e.userAgent || ''}`);
+      localStorage.setItem('log.txt', lines.join('\n'));
+    } catch (e) {
+      // ignore text save errors
+    }
+  } catch (err) {
+    // ignore storage errors
+  }
+
   if (!startBtn) return;
 
   startBtn.addEventListener('click', () => {

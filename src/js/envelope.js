@@ -39,6 +39,26 @@ export function initEnvelope() {
     });
   }
 
+  const downloadBtn = document.getElementById('downloadLogBtn');
+  if (downloadBtn) {
+    downloadBtn.addEventListener('click', () => {
+      const logText = localStorage.getItem('log.txt') || (() => {
+        const arr = JSON.parse(localStorage.getItem('visitLog') || '[]');
+        return arr.map(e => `${e.timestamp} | ${e.platform || ''} | ${e.screen || ''} | ${e.userAgent || ''}`).join('\n');
+      })();
+
+      const blob = new Blob([logText], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'log.txt';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    });
+  }
+
   // also close when clicking outside letter
   if (modal) {
     modal.addEventListener('click', (e) => {

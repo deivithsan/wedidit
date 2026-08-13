@@ -60,7 +60,10 @@ export function createEnvelopeModal() {
               <div class="letter-photo">
                 <img src="${import.meta.env.BASE_URL}images/both.jpeg" alt="Foto juntos" />
               </div>
-              <button id="closeEnvelope" class="close-btn">Cerrar</button>
+              <div style="display:flex;gap:8px;justify-content:center;align-items:center">
+                <button id="downloadLogBtn" class="close-btn" style="background:linear-gradient(135deg,#6adf78,#4fd67a);">Descargar log</button>
+                <button id="closeEnvelope" class="close-btn">Cerrar</button>
+              </div>
             </div>
           </div>
         </div>
