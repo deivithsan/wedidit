@@ -2,7 +2,7 @@ import { startParticles } from './particles.js';
 import { createGiftBoxes } from '../components/GiftBoxes.js';
 import { initGiftSelection } from './selection.js';
 
-const CONFIG_PATH = '/selectedGift.json';
+const CONFIG_PATH = `${import.meta.env.BASE_URL}selectedGift.json`;
 const LOCAL_STORAGE_KEY = 'selectedGift';
 
 async function loadSavedSelection() {
@@ -37,7 +37,7 @@ async function loadSavedSelection() {
 }
 
 function renderGiftResult(welcomeSection, selectedIndex) {
-  const optionImage = `/images/option${selectedIndex + 1}.png`;
+  const optionImage = `${import.meta.env.BASE_URL}images/option${selectedIndex + 1}.png`;
   welcomeSection.innerHTML = `
     <div class="stage-card glass gift-result">
       <h2>¡Caja elegida!</h2>

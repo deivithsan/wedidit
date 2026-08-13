@@ -58,7 +58,7 @@ export function createEnvelopeModal() {
               ideas para la carta de la racha 200 jajajaja eres mi todo amor mio, gracias por esos 100 dias 
               aguantando a este idiota que se muere por ti.</p>
               <div class="letter-photo">
-                <img src="/images/both.jpeg" alt="Foto juntos" />
+                <img src="${import.meta.env.BASE_URL}images/both.jpeg" alt="Foto juntos" />
               </div>
               <button id="closeEnvelope" class="close-btn">Cerrar</button>
             </div>

@@ -25,8 +25,8 @@ const floatingEmojis = [
   '🍣'
 ];
 
-// Ruta de la imagen del logo de BTS
-const btsLogoPath = '/images/logo.png';
+// Ruta de la imagen del logo de BTS (respecta `base` de Vite)
+const btsLogoPath = import.meta.env.BASE_URL + 'images/logo.png';
 
 export function startParticles() {
   const petals = document.getElementById('petals');
