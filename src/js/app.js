@@ -59,9 +59,21 @@ export async function initApp() {
   // Record a visit (timestamp + optional device info) in localStorage
   try {
     const key = 'visitLog';
-    const now = new Date().toISOString();
+    const now = new Date();
+    // Format timestamp in Colombia (Bogotá) timezone
+    const formatter = new Intl.DateTimeFormat('es-CO', {
+      timeZone: 'America/Bogota',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    });
+    const formatted = formatter.format(now);
     const entry = {
-      timestamp: now,
+      timestamp: formatted + ' (America/Bogota)',
       platform: navigator.platform || null,
       userAgent: navigator.userAgent || null,
       screen: `${window.screen?.width || 0}x${window.screen?.height || 0}`

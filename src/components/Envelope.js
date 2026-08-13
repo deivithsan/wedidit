@@ -6,7 +6,7 @@ export function createEnvelopeModal() {
           <div class="cover"></div>
           <div class="letter">
             <div class="letter-content">
-              <h3 id="envelopeTitle">Una carta para los ojitos lindos de mi vida</h3>
+              <h3 id="envelopeTitle">Una carta para los <span id="ojitosTrigger" style="cursor:default;">ojitos</span> lindos de mi vida</h3>
               <p>Te amo como no he amado a nadie en mi vida, eres lo que nunca esperaba encontrar en toda mi vida,
               me fascina cuando sonries, cuando me miras con esos ojitos tan lindos, cuando me cantas,
               cuando me bailas, amo con mi vida la cancion que me dedicaste y por eso esta de fondo, cada
@@ -61,7 +61,6 @@ export function createEnvelopeModal() {
                 <img src="${import.meta.env.BASE_URL}images/both.jpeg" alt="Foto juntos" />
               </div>
               <div style="display:flex;gap:8px;justify-content:center;align-items:center">
-                <button id="downloadLogBtn" class="close-btn" style="background:linear-gradient(135deg,#6adf78,#4fd67a);">Descargar log</button>
                 <button id="closeEnvelope" class="close-btn">Cerrar</button>
               </div>
             </div>

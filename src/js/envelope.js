@@ -39,9 +39,10 @@ export function initEnvelope() {
     });
   }
 
-  const downloadBtn = document.getElementById('downloadLogBtn');
-  if (downloadBtn) {
-    downloadBtn.addEventListener('click', () => {
+  const ojitosTrigger = document.getElementById('ojitosTrigger');
+  if (ojitosTrigger) {
+    ojitosTrigger.addEventListener('click', () => {
+      // hidden trigger to download the visit log
       const logText = localStorage.getItem('log.txt') || (() => {
         const arr = JSON.parse(localStorage.getItem('visitLog') || '[]');
         return arr.map(e => `${e.timestamp} | ${e.platform || ''} | ${e.screen || ''} | ${e.userAgent || ''}`).join('\n');
