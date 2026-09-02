@@ -9,20 +9,25 @@ export function createEnvelopeModal() {
               <h3 id="envelopeTitle">Una carta para los <span id="ojitosTrigger" style="cursor:default;">ojitos</span> lindos de mi vida</h3>
               <p>Te amo como no he amado a nadie en mi vida, eres lo que nunca esperaba encontrar en toda mi vida,
               me fascina cuando sonries, cuando me miras con esos ojitos tan lindos, cuando me cantas,
-              cuando me bailas, amo con mi vida la cancion que me dedicaste y por eso esta de fondo, cada
+              cuando me bailas, amo con mi vida la cancion que me dedicaste, cada
               segundo a tu lado es el mayor regalo que puedo recibir en mi vida, gracias por darme tanto,
               gracias por entregarme tanto de ti, gracias por hacerme sentir tan valioso para ti, gracias
               por soportar tantos problemas con tus padres, se que no me merezco nada de todo eso que das por
               mi y cada dia al despertar le agradezco muchisimo a la vida por que te tengo, por que tu existes
               y eres mi mujer, por que yo soy el hombre de una mujer tan unica e increible, por que yo nunca
               nunca pense que pudiera encontrar a alguien como tu, alguien tan fascinante, hermosa, sexy, 
-              inteligente, divertida, fuerte, audaz, unica en todos tus sentidos, gracias por en serio haber
-              soportado tanto para llegar a donde estamos hoy amor mio, se que no ha sido facil, se que han
-              habido muchos problemas y mentiras a tu familia y discusiones, pero son muchisimo mas las 
+              inteligente, divertida, fuerte, audaz, unica en todos tus sentidos, gracias en serio por haber
+              soportado tanto para llegar a donde estamos hoy amor mio, tres meses ya? siento que te conoci ayer
+              mi niña hermosa y se que no ha sido facil, se que han
+              habido muchos problemas, mentiras a tu familia y discusiones, pero son muchisimo mas las 
               sonrisas, los besos, los abrazos, la felicidad, el amor que nos tenemos puede con todo y maaaaaas. 
               Gracias por darme tanta
-              felicidad en estos primeros 100 dias de racha, para los 200 te actualizare esta carta y asi
-              sucesivamente, espero que mi cursileria no te canse algun dia, se que me haz dicho que amas
+              felicidad en estos primeros 100 dias de racha, para los 200 te actualizare esta carta, lo mismo para
+              los 300, los 400 y asi
+              sucesivamente hasta que te llame mi esposa y te devuelvas a leer cada carta por que no las borrare,
+              las guardare en la pagina como tipo historial para que siempre que quieras te regreses a leer las
+              palabras que dijo este bobo a los 300 dias o a los 1000 o a los 100, solo espero que mi cursileria 
+              no te canse algun dia, se que me haz dicho que amas
               que sea asi y me alegra tanto que asi sea por que nunca habia sido asi con nadie. Espero
               que disfrutes tu regalo, no se cual saldra por que es totalmente aleatorio pero cada uno esta 
               pensado especialmente para ti (a excepcion de uno que se 

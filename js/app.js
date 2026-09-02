@@ -25,5 +25,5 @@ setInterval(createSpark,350);
 
 document.getElementById('startBtn').addEventListener('click',()=>{
  if(navigator.vibrate){navigator.vibrate(35);}
- alert('✨ En la Fase 2 aparecerán las cuatro cajas sorpresa.');
+ alert('Te amoooooooooooooooo');
 });
